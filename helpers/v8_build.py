@@ -61,7 +61,7 @@ def install_depot_tools():
 
 def prepare_workdir():
     directories = ["build", "build_overrides", "buildtools", "testing",
-                   "third_party", "tools", "gni"]
+                   "third_party", "tools"]
     with chdir(local_path("../py_mini_racer/extension")):
         for item in directories:
             if not os.path.exists(item):

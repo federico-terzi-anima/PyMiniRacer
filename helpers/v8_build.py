@@ -244,7 +244,7 @@ def apply_patches(path, patches_path):
 
 
 def patch_sysroot():
-    with chdir(local_path("../py_mini_racer/extension/v8/build/linux/debian_sid_amd64-sysroot")):
+    with chdir(local_path("../py_mini_racer/extension/v8/build/linux/debian_sid_arm64-sysroot")):
         with open("usr/include/glob.h", "r") as f:
             header = f.read()
         s, e = header.split("sysroot-creator.sh.", 1)
